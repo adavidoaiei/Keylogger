@@ -201,7 +201,7 @@ void Stealth()
 // Function to check if the system is still booting up
 bool IsSystemBooting() 
 {
-	return GetSystemMetrics(SM_SYSTEMDOCKED) != 0;
+	return GetSystemMetrics(SM_SHUTTINGDOWN) != 0;
 }
 
 int main()
